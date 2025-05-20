@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+html {
+   font-family: "Lato", sans-serif;
+   font-size: 20px;
+}
+
+#box-1 {
+   width: 200px;
+   /* height: 200px; */
+   border: 1px solid red;
+}
+
+.box-2 {
+   width: 50%;
+   background-color: rgb(152, 199, 229);
+}
+
+.contendedor {
+   /* 
+   16px = 1rem 
+   20rem = 20 * 16px = 320px
+   */
+   width: 20rem;
+   background-color: lightgreen;
+   font-size: 10px;
+}
+
+#contenedor-id {
+   /* 
+   10px = 1em 
+   20em = 20 * 10px = 200px
+   */
+   width: 20em;
+   background-color: lightsalmon;
+}
+
+body {
+   /* background-image: linear-gradient(to right, #f30f34, #f50061, #e9008c, #cc2bb3, #9e4dd3, #7b6eeb, #4f87f9, #009cff, #00bbff, #00d3ef, #00e4a0, #17ec29);   color: rgb(10, 4, 4); */
+   width: 100vw;
+   height: 100%;
+}
+
+h1 {
+   color: linear-gradient(to bottom, #cc3346, #eb6033, #fa9113, #f8c400, #e3f815);
+}
+
+main {
+   background-image: linear-gradient(to right, #f30f34, #f50061, #e9008c, #cc2bb3, #9e4dd3, #7b6eeb, #4f87f9, #009cff, #00bbff, #00d3ef, #00e4a0, #17ec29);
+   color: rgb(10, 4, 4);
+}
+
+.item1 {
+   background-image: url('https://picsum.photos/200/200?random=2');
+   background-size: cover;
+   width: 500px;
+   height: 200px;
+}
+
+.item5 {
+   background-image: url('../assets/img/Leo_messi_barce_2005.jpg');
+   background-size: cover;
+   width: 500px;
+   height: 200px;
+}
+

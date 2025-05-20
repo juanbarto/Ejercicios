@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 04 - CSS</title>
+    <link rel="stylesheet" href="test_04.css">
+</head>
+<body>
+    <header>
+        <h1 id="main-title">Website with css</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Tabla de Productos</h2>
+            <table>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                </tr>
+                <tr>
+                    <td>Mouse</td>
+                    <td>$2.00</td>
+                </tr>
+                <tr>
+                    <td>Keyboard</td>
+                    <td>$3.50</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <form>
+                <label for="nombre">Nombre y apellido</label><br>
+                <input type="text" id="nombre" name="nombre"><br><br>
+
+                <label for="email">Correo electrónico</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                
+                <label>Preferencias:</label><br>
+                <input type="checkbox" id="noticias" name="preferencias" value="noticias">
+                <label for="noticias">Recibir noticias</label><br>
+
+                <input type="checkbox" id="ofertas" name="preferencias" value="ofertas">
+                <label for="ofertas">Recibir ofertas</label><br><br>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p class="footer-text">@ 2024 my Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

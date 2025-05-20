@@ -1,0 +1,52 @@
+
+/* 
+   De esta manera creamos comentarios en CSS
+*/
+
+
+
+/* * {
+   color: white;
+}  */
+
+body {
+   font-family: Arial;
+   background-color: lightpink;
+}
+
+h1 {
+   color: chartreuse;
+   text-align: center;
+}
+
+p {
+   color: orangered;
+}
+
+#titulo-especial {
+   color: darkred;
+   text-decoration: underline;
+} 
+
+.clase-titulo {
+   color: blue;
+   text-decoration: none;
+}
+
+h3 {
+   color: yellow;
+   text-decoration: doubleline;
+}
+
+#id-parrafo {
+   color: red;
+}
+
+.class-parrafo {
+   color: green;
+}
+
+div {
+   background-color: yellow;
+   color: red;
+}
