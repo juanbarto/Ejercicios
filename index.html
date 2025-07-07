@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio - Proyecto Final</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ======================= -->
+    <!-- HEADER: Título principal y subtítulo -->
+    <!-- ======================= -->
+    <header>
+        <h1>Take your wallpaper and protect your eyes</h1>
+        <h2>Choose one or all you want, and make your desk more user-friendly</h2>
+    </header>
+    <!-- ======================= -->
+    <!-- NAV: Navegación principal con enlaces externos -->
+    <!-- ======================= -->
+    <nav>
+        <ul class="nav-list">
+            <li><a href="https://www.freenatwallpaper.com/start">Start</a></li>
+            <li><a href="https://www.freenatwallpaper.com/About_us">About us...</a></li>
+            <li><a href="https://www.freenatwallpaper.com/gallery">Gallery</a></li>
+            <li><a href="https://www.freenatwallpaper.com/contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- ======================= -->
+    <!-- MAIN: Layout principal con carrito, galería estática y botones -->
+    <!-- ======================= -->
+    <main class="disenio-galeria">
+        <!-- CART AREA -->
+        <div class="tarjeta-carrito">
+            <div class="cabecera-carrito">
+                <div class="titulo-carrito">
+                    <h3>Cart</h3>
+                    <img src="assets/carritoimg.png" alt="Cart icon">
+                </div>
+                <button id="btnBuy" class="boton-nav">Buy</button>
+            </div>
+            <div class="carritoResumen">
+                <textarea id="resumen" readonly rows="8"></textarea>
+                <p id="total">TOTAL: $0</p>
+            </div>
+        </div>
+        <!-- CINTA DEL CARRITO CON SCROLL + BOTÓN EMPTY -->
+        <div class="carrito-y-boton">
+            <div class="carritoActual" id="listaCarrito">
+            </div>
+            <button id="btnVaciar" class="boton-nav">Empty Cart</button>
+        </div>
+        <!-- GALERÍA DE WALLPAPERS ESTÁTICOS -->
+        <section class="galeria">
+            <div class="card">
+                <img src="assets/img1.webp" alt="estancia">
+                <p>Autumn at the ranch</p>
+                <div class="precio-y-boton">
+                    <span class="precio">$99</span>
+                    <button class="agregar-btn" data-title="Autumn at the ranch" data-price="99" data-img="assets/img1.webp">Cart +</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/img2.webp" alt="colina">
+                <p>Pond on the hill</p>
+                <div class="precio-y-boton">
+                    <span class="precio">$25</span>
+                    <button class="agregar-btn" data-title="Pond on the hill" data-price="25" data-img="assets/img2.webp">Cart +</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/img3.webp" alt="valle">
+                <p>Golf valley</p>
+                <div class="precio-y-boton">
+                    <span class="precio">$60</span>
+                    <button class="agregar-btn" data-title="Golf valley" data-price="60" data-img="assets/img3.webp">Cart +</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/img4.webp" alt="lago">
+                <p>Lake of tranquility</p>
+                <div class="precio-y-boton">
+                    <span class="precio">$110</span>
+                    <button class="agregar-btn" data-title="Lake of tranquility" data-price="110" data-img="assets/img4.webp">Cart +</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/img5.webp" alt="invierno">
+                <p>Winter is falling</p>
+                <div class="precio-y-boton">
+                    <span class="precio">$30</span>
+                    <button class="agregar-btn" data-title="Winter is falling" data-price="30" data-img="assets/img5.webp">Cart +</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/img6.webp" alt="cima">
+                <p>Top of the island</p>
+                <div class="precio-y-boton">
+                    <span class="precio">$78</span>
+                    <button class="agregar-btn" data-title="Top of the island" data-price="78" data-img="assets/img6.webp">Cart +</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- ======================= -->
+    <!-- SECCIÓN FETCH: Productos traídos desde API externa -->
+    <!-- ======================= -->
+    <section id="fetch-galeria" class="galeria-fetch">
+        <div class="api-container"></div> <!-- Aquí se insertarán las tarjetas -->
+        <button id="btnWalls" class="boton-nav">Load more wallpapers</button>
+    </section>
+    <!-- ======================= -->
+    <!-- CONTENIDO ADICIONAL: Texto sobre naturaleza + formulario de contacto -->
+    <!-- ======================= -->
+    <div class="seccion-contenido">
+        <!-- TEXTO SOBRE NATURALEZA -->
+        <section class="informacion">
+            <div class="texto">
+                <h2>Why Nature?</h2>
+                <p>Nature brings serenity, balance and a timeless beauty to your screen. It’s not just a wallpaper, it’s a breath of calm in your digital day.</p>
+            </div>
+            <div class="naturaleza">
+                <img src="assets/naturaluza.jpg" alt="naturaleza">
+            </div>
+        </section>
+        <!-- FORMULARIO DE CONTACTO -->
+        <section id="contacto">            
+            <h2>Contact us</h2>
+            <form action="https://formspree.io/f/mqapnjng" method="POST">
+                <label for="nombre">Name:</label>
+                <input type="text" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" required>
+                <label for="mensaje">Message:</label>
+                <textarea name="mensaje" rows="10" cols="30" required></textarea>
+                <button type="submit" class="boton-nav">Send</button>
+            </form>
+        </section> 
+    </div>
+    <!-- ======================= -->
+    <!-- FOOTER: Derechos simbólicos  xD -->
+    <!-- ======================= -->     
+    <footer>
+        <p>© 2025 Cheap wallpapers web. There's no copyright here :-) .</p>
+    </footer>
+</body>
+</html>
